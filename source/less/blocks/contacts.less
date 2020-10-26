@@ -1,0 +1,28 @@
+.contacts {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 10px 10px 20px 10px;
+  border-radius: 5px;
+  background-color: @bg-main;
+}
+.contacts__visit {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+@media(min-width:@tablet-width) {
+  .contacts__visit {
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+}
+@media(min-width:@desktop-width) {
+  .contacts {
+    padding-left: 80px;
+
+    & ul {
+      padding-left: 18px;
+    }
+  }
+}

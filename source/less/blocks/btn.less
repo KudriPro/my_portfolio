@@ -1,0 +1,61 @@
+.btn {
+  display: inline-block;
+  padding: 13px 23px;
+  box-sizing: border-box;
+  border: none;
+  font: inherit;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: @light-color-text;
+  vertical-align: middle;
+  background-color: @bg-btn;
+  border-radius: 5px;
+  border: 1px solid @bg-btn;
+  cursor: pointer;
+  text-shadow: -3px 0px 3px rgba(123, 125, 137, 0.64);
+  transition: background-color 0.1s linear, color 0.1s linear;
+
+  &--resume,
+  &--info {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  &--portfolio {
+    min-width: 149px;
+    padding: 10px 20px;
+    margin-bottom: 7px;
+    border: 1px solid @bg-btn;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color:@bg-main;
+    cursor: pointer;
+    &:hover,
+    &.active {
+      background-color: @bg-btn;
+      color: @light-color-text;
+      text-shadow: -3px 0px 3px rgba(123, 125, 137, 0.64);
+    }
+  }
+}
+.btn:hover,
+.btn:focus {
+  background: transparent;
+  color: @main-color-text;
+  text-shadow: none;
+}
+.btn:active {
+  color: rgba(0, 0, 0, 0.4);
+}
+// .btn.disabled,
+// .btn:disabled {
+//   cursor: default;
+//   pointer-events: none;
+//   background: @btn-disabled;
+//   color: rgba(255, 255, 255, 0.8);
+// }
